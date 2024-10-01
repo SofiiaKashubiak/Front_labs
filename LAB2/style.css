@@ -1,0 +1,89 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(1):hover {
+    background-color: #f5f511;
+}
+
+tr:nth-child(2):hover {
+    background-color: #118f8f;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.traffic-light-1, .traffic-light-2 {
+    width: 120px;
+    height: 320px;
+    background-color: #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 5px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.traffic-light-1 {
+    position: relative;
+}
+
+.traffic-light-1 .light {
+    position: absolute;
+    left: 20%;
+}
+
+.traffic-light-1 .red {
+    top: 10px;
+}
+
+.traffic-light-1 .yellow {
+    top: 120px;
+}
+
+.traffic-light-1 .green {
+    top: 230px;
+}
+
+
+.traffic-light-2 .red {
+    transform: translate(15px, 8px);
+}
+
+.traffic-light-2 .yellow {
+    transform: translate(15px, 24px);
+}
+
+.traffic-light-2 .green {
+    transform: translate(15px, 40px);
+}
